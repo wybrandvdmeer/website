@@ -45,6 +45,10 @@ ul li {
 	font-size: large;
 }
 
+.linkstyle {
+	color: #a9a9a9;
+}
+
 .buttons {
 	position: absolute;
 	top: 20px;
