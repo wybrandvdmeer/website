@@ -1,6 +1,7 @@
 body {
 	background-color: #a9a9a9;
 	background-color: rgb(169, 169, 169);
+	background: url(images/sunflower1.jpg) no-repeat left top;
 }
 
 .main-container {
@@ -15,7 +16,7 @@ body {
 	position: absolute;
 	top: -85px;
 	background: url(images/pawn.png) no-repeat left top;
-	padding: 100px 100px;
+	padding: 100px 90px 100px 90px;
 	z-index: 100;
 }
 
@@ -32,10 +33,8 @@ ul {
 }
 
 .empty-menu-entry {
-	padding: 40px 100px 41px 100px;
-	background-color: red;
-	background-color: #a9a9a9;
-	background-color: rgb(169, 169, 169);
+	padding: 40px 80px 41px 100px;
+	background-color: transparent;
 }
 
 ul li {
@@ -57,3 +56,25 @@ ul li {
 	margin: 0 10px 0 10px;
 	float: right;
 }
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	left: 2px;
+	right: 2px;
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 20px;
+}
+
+.social-media-buttons {
+	position: absolute;
+	bottom: 0;	
+	right: 20px;
+	background-color: transparent;
+	z-index: 90;
+}
+.social-media-button {
+	float: right;
+	padding: 0 5px 0 5px;
+}
+
