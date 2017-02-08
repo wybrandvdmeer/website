@@ -12,12 +12,15 @@
 		<!-- Slides. -->
 		<div class="slide">
     		<img src="images/slide1.jpg"/>
+    		<div class="slide-description">Slide 1.</div>
   		</div>
   		<div class="slide">
     		<img src="images/slide2.jpg"/>
+    		<div class="slide-description">Slide 2.</div>
   		</div>
   		<div class="slide">
     		<img src="images/slide3.jpg"/>
+    		<div class="slide-description">Slide 3.</div>
   		</div>
 
 		<div class="main-container">
@@ -29,15 +32,14 @@
 					<li>Diensten</li>
 				</ul>
 
-		<div class="social-media-buttons">
-			<div class="social-media-button">
-				<img src="images/facebook.png"/>	
-			</div>
-			<div class="social-media-button">
-				<img src="images/twitter.png"/>	
-			</div>
-		</div>
-		
+				<div class="social-media-buttons">
+					<div class="social-media-button">
+						<img src="images/facebook.png"/>	
+					</div>
+					<div class="social-media-button">
+						<img src="images/twitter.png"/>	
+					</div>
+				</div>
 			</div>
 	
 			<div class="content">
@@ -83,8 +85,14 @@
 		<div class="button-left" onclick="previousSlide(-1)">
 			<img src="images/left.png"/>	
 		</div>
+		<div class="button-down" onclick="hideContent()">
+			<img src="images/down.png"/>	
+		</div>
+		<div hidden class="button-up" onclick="hideContent()">
+			<img src="images/up.png"/>	
+		</div>
 	
 		<div class="footer">wvdmeer industries</div>
 	</div>
-	<script type="text/javascript" src="scripts/slides.js"></script>
+	<script type="text/javascript" src="scripts/functionality.js"></script>
 </body>
