@@ -1,6 +1,10 @@
-body {
+.slide-show {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
 	background: url(images/sunflower1.jpg) no-repeat left top;
-	background-attachment: fixed;
 }
 
 .main-container {
