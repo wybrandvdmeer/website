@@ -31,6 +31,18 @@
 	background-color: rgba(0, 0, 0, 0.2);
 }
 
+.social-media-buttons {
+	position: absolute;
+	top: 5px;
+	right: 0;
+}
+
+.social-media-button {
+	float: right;
+	padding: 0 5px 0 5px;
+	background-color: transparent;
+}
+
 ul {
 	list-style-type: none;
 
@@ -99,15 +111,4 @@ ul li {
 	height: 20px;
 }
 
-.social-media-buttons {
-	position: absolute;
-	bottom: 0;	
-	right: 20px;
-	background-color: transparent;
-	z-index: 90;
-}
-.social-media-button {
-	float: right;
-	padding: 0 5px 0 5px;
-}
 
