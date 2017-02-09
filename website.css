@@ -75,7 +75,6 @@
 	position: absolute;
 	top: -85px;
 	background: url(images/pawn.png) no-repeat left top;
-	padding: 100px 90px 100px 90px;
 }
 
 .main-menu {
@@ -157,12 +156,33 @@ ul li {
 }
 
 .content {
-	position: relative;	
-	top: 85px;
 	background-color: rgba(0, 0, 0, 0.6);
 	color: #a9a9a9;
+}
+
+.content-contact {
+	position: absolute;
+	margin: auto;
+	width: 40%;
+	bottom: 85px;
+	left: 75px;
 	padding: 0 10px 0 10px;
 
+	/* To create a background on the container. 
+	*/
+	overflow: auto;
+}
+
+.content-home {
+	position: relative;
+	margin: auto;
+	width: 40%;
+
+	top: 85px;
+	padding: 0 10px 0 10px;
+
+	/* To create a background on the container. 
+	*/
 	overflow: auto;
 	max-height: calc(70vh - 50px);
 
@@ -172,8 +192,34 @@ ul li {
 	Firefox: height: -moz-calc(100% - 65px); 
 */
 	
-	margin: auto;
-	width: 40%;
+}
+
+.name-email {
+	float: left;
+	padding: 5px 5px;
+	margin: 10px 10px;
+	width: 65%;
+	display: block;
+}
+
+.send-button {
+	float: right;
+	padding: 5px 5px;
+	margin: 10px 10px;
+	height: 65px;
+	width: 100px;
+	text-align: center;
+}
+
+.message-field {
+	float: left;
+	padding: 0;
+	margin: 10px;
+	height: 90px;
+
+	/* width is content only, e.g. excl. border. 
+	*/
+	width: 96%;
 }
 
 .footer {
