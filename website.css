@@ -86,7 +86,7 @@
 
 .social-media-buttons {
 	position: absolute;
-	top: 5px;
+	top: 0;
 	right: 0;
 }
 
@@ -102,10 +102,13 @@ ul {
 	/* Centre alignment of the table menu. */
 	display: table;
 	margin: 0 auto;
+
+	/* ul has default padding on the left: remove it. */
+	padding: 0px;
 }
 
 ul li {
-	padding: 15px 100px 15px 100px;
+	padding: 10px 50px 10px 50px;
 	float: left;
 	margin: 0px 1px 0px 0px;
 	background-color: #000000;
