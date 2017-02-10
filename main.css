@@ -190,4 +190,18 @@ ul li {
 	height: 17px;
 }
 
+.rotate:hover {
+	-webkit-animation-name: rotate;
+	-webkit-animation-duration: 2s;
+	
+	animation-name: rotate;
+	animation-duration: 2s;
+}
 
+@-webkit-keyframes rotate {
+	0% {transform: rotate(20deg)};
+}
+
+@keyframes rotate {
+	0% {transform: rotate(90deg)};
+}
