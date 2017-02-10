@@ -22,6 +22,10 @@
     		<div class="slide-description">Slide 3.</div>
   		</div>
 
+		<div class="slide fade background-email-box">
+    		<div class="slide-description"></div>
+  		</div>
+
 		<div class="main-container">
 			<div class="logo"></div>
 			<div class=main-menu>
@@ -42,7 +46,7 @@
 				</div>
 			</div>
 	
-			<div class="content content-contact fade">
+			<div onmouseover="showEmailBox()" onmouseout="hideEmailBox()" class="content content-contact fade">
 				<input class="name-email" type="text" placeholder="Naam." name=""/>
 				<input class="send-button" type="submit" value="Verstuur." name=""/>
 				<input class="name-email" type="text" placeholder="Email." name=""/>
@@ -67,4 +71,5 @@
 	</div> <!-- slide show. -->
 			
 	<script type="text/javascript" src="../scripts/functionality.js"></script>
+	<script type="text/javascript" src="./scripts/functionality.js"></script>
 </body>

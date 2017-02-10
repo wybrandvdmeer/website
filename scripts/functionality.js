@@ -54,6 +54,16 @@ function previousSlide() {
   showSlides(-1); 
 }
 
+function showCurrentBackGround() {
+  var slides = document.getElementsByClassName("slide");
+  slides[getSlideIndex() - 1].style.display = "block";
+}
+
+function hideCurrentBackGround() {
+  var slides = document.getElementsByClassName("slide");
+  slides[getSlideIndex() - 1].style.display = "none";
+}
+
 function showSlides(delta) {
   var slides = document.getElementsByClassName("slide");
 
