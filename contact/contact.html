@@ -22,7 +22,7 @@
     		<div class="slide-description">Slide 3.</div>
   		</div>
 
-		<div class="slide fade background-email-box">
+		<div class="fade background-email-box">
     		<div class="slide-description"></div>
   		</div>
 
@@ -46,15 +46,15 @@
 				</div>
 			</div>
 
-			<div class="mail-box-arrow send-mail">
+			<div hidden class="mail-box-arrow send-mail">
 				<img src="images/right-arrow.png"/>	
 			</div>	
 	
 			<div onmouseover="showEmailBox()" onmouseout="hideEmailBox()" class="content content-contact fade">
-				<input class="name-email" type="text" placeholder="Naam." name=""/>
-				<input class="send-button" type="submit" value="Verstuur." name=""/>
-				<input class="name-email" type="text" placeholder="Email." name=""/>
-				<textarea class="message-field" type="text" placeholder="Bericht." name=""></textarea>
+				<input class="name-email" type="text" placeholder="Naam" name=""/>
+				<input class="send-button" onclick="triggerArrow()" type="submit" value="Verstuur" name=""/>
+				<input class="name-email" type="text" placeholder="Email" name=""/>
+				<textarea class="message-field" type="text" placeholder="Bericht" name=""></textarea>
 			</div>
 		</div>
 	
