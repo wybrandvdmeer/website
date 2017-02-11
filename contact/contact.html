@@ -54,7 +54,9 @@
 				<input class="name-email" type="text" placeholder="Naam" name="name"/>
 				<input class="send-button" onclick="triggerArrow()" type="submit" value="Send" name=""/>
 				<input class="name-email" type="email" placeholder="Email" name="_replyto"/>
-				<textarea class="message-field" type="text" placeholder="Bericht" name=""></textarea>
+				<textarea class="message-field" type="text" placeholder="Bericht" name="name"></textarea>
+				<!-- spam prevention. -->
+				<input type="text" name="_gotcha" style="display:none" />
 			</form>
 		</div>
 	
