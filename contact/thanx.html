@@ -3,7 +3,7 @@
 	<head>
 		<title>website.com</title>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<link rel="stylesheet" type="text/css" href="contact.css">
+		<link rel="stylesheet" type="text/css" href="thanx.css">
 	</head>
 </html>
 <body>
@@ -20,10 +20,6 @@
 
 		<div class="slide fade background-slide3">
     		<div class="slide-description">Slide 3.</div>
-  		</div>
-
-		<div class="fade background-email-box">
-    		<div class="slide-description"></div>
   		</div>
 
 		<div class="main-container">
@@ -45,24 +41,9 @@
 					</div>
 				</div>
 			</div>
-
-			<div hidden class="mail-box-arrow send-mail">
-				<img src="images/right-arrow.png"/>	
-			</div>	
-	
-			<form id="contact-form" method="post" onmouseover="showEmailBox()" onmouseout="hideEmailBox()" class="content content-contact fade">
-				<input class="name-email" type="text" placeholder="Naam" name="name"/>
-				<input class="send-button" onclick="triggerArrow()" type="submit" value="Send" name=""/>
-				<input class="name-email" type="email" placeholder="Email" name="_replyto"/>
-				<textarea class="message-field" type="text" placeholder="Bericht" name="name"></textarea>
-				<!-- spam prevention. -->
-				<input type="text" name="_gotcha" style="display:none" />
-				<input type="hidden" name="_next" value="./thanks.html" />
-			</form>
-			<script>
-    			var contactform =  document.getElementById('contact-form');
-    			contactform.setAttribute('action', 'https://formspree.io/' + 'vdmeerdesign' + '@' + 'gmail' + '.' + 'com');
-			</script>
+			<div class="content content-thanx fade">
+				<img src="images/thx.png"/>
+			</div>
 		</div>
 	
 		<div class="button-right" onclick="nextSlide(1)">
