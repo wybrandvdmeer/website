@@ -72,8 +72,9 @@
 
 .logo {
 	position: absolute;
-	top: -85px;
-	background: url(images/pawn.png) no-repeat left top;
+	top: 10%;
+	left: 20px;
+	z-index: 100;
 }
 
 .main-menu {
