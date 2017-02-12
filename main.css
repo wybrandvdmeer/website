@@ -4,6 +4,7 @@
 	left: 0;
 	height: 100%;
 	width: 100%;
+	background-color: black;
 }
 
 .slide img {
@@ -48,18 +49,18 @@
 /* Fading animation */
 .fade {
 	-webkit-animation-name: fade;
-	-webkit-animation-duration: 4s;
+	-webkit-animation-duration: 3s;
 	animation-name: fade;
-	animation-duration: 4s;
+	animation-duration: 3s;
 }
 
 @-webkit-keyframes fade {
-	from {opacity: .2} 
+	from {opacity: .3} 
 	to {opacity: 1}
 }
 
 @keyframes fade {
-	from {opacity: .2} 
+	from {opacity: .3} 
 	to {opacity: 1}
 }
 

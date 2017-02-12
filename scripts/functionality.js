@@ -74,7 +74,7 @@ function showSlidesWithTimer(newImage) {
   if(newImage === undefined) {
     newImage = true;
   }
-  
+
   if(newImage) {
     var slideIndex = getSlideIndex();
 
@@ -93,7 +93,7 @@ function showSlidesWithTimer(newImage) {
     showSlide(slideIndex, slides);
   }
 
-  sessionStorage.timeOut = setTimeout(showSlidesWithTimer, 5000);
+  sessionStorage.timeOut = setTimeout(showSlidesWithTimer, 10000);
 }
 
 function showSlide(slideIndex, slides) {
