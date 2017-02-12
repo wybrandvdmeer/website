@@ -1,9 +1,9 @@
-showSlides(0);
+showSlides();
 showContent();
 
 function getSlideIndex() {
   if(sessionStorage.slideIndex === undefined) {
-    sessionStorage.slideIndex = 1;
+    return sessionStorage.slideIndex;
   }
   return parseInt(sessionStorage.slideIndex);
 }
@@ -46,44 +46,60 @@ function hideContent() {
     showContent();
 }
 
-function nextSlide() {
-  showSlides(1); 
-}
-
-function previousSlide() {
-  showSlides(-1); 
-}
-
-function showCurrentBackGround() {
-  var slides = document.getElementsByClassName("slide");
-  slides[getSlideIndex() - 1].style.display = "block";
-}
-
 function hideCurrentBackGround() {
+  clearTimeout(sessionStorage.timeOut);
+
   var slides = document.getElementsByClassName("slide");
   slides[getSlideIndex() - 1].style.display = "none";
 }
 
-function showSlides(delta) {
-  var slides = document.getElementsByClassName("slide");
+function showCurrentBackGround() {
+  showSlides();
+}
 
-  var slideIndex = getSlideIndex();
+function showSlides() {
+  if(sessionStorage.timeOut === undefined) {
+    showSlidesWithTimer(true);
+  } else {
+    /* User navigated to new page: lost the timer. 
+    */ 
+    var slides = document.getElementsByClassName("slide");
+    showSlide(getSlideIndex(), slides);
+    showSlidesWithTimer(false);
+  }
+}
 
-  slideIndex += delta;
+function showSlidesWithTimer(newImage) {
+
+  if(newImage === undefined) {
+    newImage = true;
+  }
   
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
-  } 
+  if(newImage) {
+    var slideIndex = getSlideIndex();
 
-  if (slideIndex < 1) {
-    slideIndex = slides.length;
+    if(slideIndex === undefined) {
+      slideIndex = 1;
+    } else {
+      slideIndex++;
+    }
+  
+    var slides = document.getElementsByClassName("slide");
+    if (slideIndex > slides.length) {
+      slideIndex = 1;
+    } 
+
+    setSlideIndex(slideIndex);
+    showSlide(slideIndex, slides);
   }
 
+  sessionStorage.timeOut = setTimeout(showSlidesWithTimer, 5000);
+}
+
+function showSlide(slideIndex, slides) {
   for (var i = 0; i < slides.length; i++) {
       slides[i].style.display = "none"; 
   }
 
   slides[slideIndex - 1].style.display = "block";
-
-  setSlideIndex(slideIndex);
 }
