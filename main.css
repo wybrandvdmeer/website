@@ -49,18 +49,18 @@
 /* Fading animation */
 .fade {
 	-webkit-animation-name: fade;
-	-webkit-animation-duration: 3s;
+	-webkit-animation-duration: 10s;
 	animation-name: fade;
-	animation-duration: 3s;
+	animation-duration: 10s;
 }
 
 @-webkit-keyframes fade {
-	from {opacity: .3} 
+	from {opacity: .1} 
 	to {opacity: 1}
 }
 
 @keyframes fade {
-	from {opacity: .3} 
+	from {opacity: .1} 
 	to {opacity: 1}
 }
 
@@ -160,6 +160,7 @@ ul li {
 .content {
 	background-color: rgba(0, 0, 0, 0.6);
 	color: #a9a9a9;
+	z-index: 100;
 }
 
 .content-home {
@@ -173,7 +174,7 @@ ul li {
 	/* To create a background on the container. 
 	*/
 	overflow: auto;
-	max-height: calc(70vh - 50px);
+	max-height: calc(70vh - 50px); 
 
 /* For the different browser types (firefox & chrome works):
 	Opera: height: -o-calc(100% - 65px); 
