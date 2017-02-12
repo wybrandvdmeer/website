@@ -46,23 +46,8 @@
 				</div>
 			</div>
 
-			<div hidden class="mail-box-arrow send-mail">
-				<img src="images/right-arrow.png"/>	
-			</div>	
-	
-			<form id="contact-form" method="post" onmouseover="showEmailBox()" onmouseout="hideEmailBox()" class="content content-contact fade">
-				<input class="name-email" type="text" placeholder="Naam" name="name"/>
-				<input class="send-button" onclick="triggerArrow()" type="submit" value="Send" name=""/>
-				<input class="name-email" type="email" placeholder="Email" name="_replyto"/>
-				<textarea class="message-field" type="text" placeholder="Bericht" name="name"></textarea>
-				<!-- spam prevention. -->
-				<input type="text" name="_gotcha" style="display:none" />
-				<input type="hidden" name="_next" value="./website/contact/thanx.html" />
-			</form>
-			<script>
-    			var contactform =  document.getElementById('contact-form');
-    			contactform.setAttribute('action', 'https://formspree.io/' + 'vdmeerdesign' + '@' + 'gmail' + '.' + 'com');
-			</script>
+			<iframe src="http://www.123contactform.com/form-2481973/Contact-Lead-Form" scrolling="no" allowtransparency="true" frameborder="0" onmouseover="showEmailBox()" onmouseout="hideEmailBox()" class="content content-contact fade">
+			</iframe>
 		</div>
 	
 		<div class="button-right" onclick="nextSlide(1)">
