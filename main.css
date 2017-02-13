@@ -1,3 +1,22 @@
+p {
+	font-family: arial, sans-serif;
+	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	line-height: 22.0px;
+}
+
+h4 {
+	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	line-height: 22.0px;
+}
+
 .slide-show {
 	position: fixed;
 	top: 0;
@@ -9,8 +28,8 @@
 
 .logo {
 	position: absolute;
-	top: 10%;
-	left: 20px;
+	top: 9%;
+	left: 10px;
 	z-index: 10;
 }
 
@@ -88,12 +107,12 @@
 }
 
 @-webkit-keyframes fade {
-	from {opacity: .3} 
+	from {opacity: .2} 
 	to {opacity: 1}
 }
 
 @keyframes fade {
-	from {opacity: .3} 
+	from {opacity: .2} 
 	to {opacity: 1}
 }
 
@@ -167,7 +186,7 @@ ul li {
 }
 
 .content {
-	background-color: rgba(176, 180, 186, 0.6);
+	background-color: rgba(176, 180, 186, 0.9);
 	color: #091933;
 	font-size: 20px;
 	z-index: 100;
@@ -176,9 +195,9 @@ ul li {
 .content-home {
 	position: relative;
 	margin: auto;
-	width: 40%;
+	width: 60%;
 
-	top: 85px;
+	top: 20%;
 	padding: 0 10px 0 10px;
 
 	/* To create a background on the container. 
@@ -191,6 +210,9 @@ ul li {
 	Google, safari: height: -webkit-calc(100% - 65px); 
 	Firefox: height: -moz-calc(100% - 65px); 
 */
+
+	border-radius: 25px;
+	border: 2px solid black;
 	
 }
 
