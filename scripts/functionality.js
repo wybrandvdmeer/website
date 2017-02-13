@@ -25,8 +25,8 @@ function setShowContent(showContent) {
 
 function showContent() {
     var content = document.getElementsByClassName("content")[0];
-    var up = document.getElementsByClassName("button-up")[0];
-    var down = document.getElementsByClassName("button-down")[0];
+    var up = document.getElementsByClassName("content-up")[0];
+    var down = document.getElementsByClassName("content-down")[0];
     var showContent = getShowContent();
    
     if(showContent) {
