@@ -8,22 +8,7 @@
 </html>
 <body>
 	<div class="slide-show">
-		<div class="logo">
-			<img src="../images/logo.png"/>
-		</div>
-
-		<div class="contact-icon">
-			<img src="../images/contact.png"/>
-		</div>
-
-		<div class="foregroundselector content-down" onclick="hideContent()">
-			<img src="../images/forebackgroundselector.png"/>
-		</div>
-
-		<div hidden class="foregroundselector content-up" onclick="hideContent()">
-			<img src="../images/backforegroundselector.png"/>
-		</div>
-
+		
 		<!-- Slides. -->
 		<div class="slide fade background-slide1">
   		</div>
@@ -37,6 +22,23 @@
 		<div class="fade-mail background-email-box">
     		<div class="slide-description"></div>
   		</div>
+		<div class="logo">
+			<img src="../images/logo.png"/>
+		</div>
+
+		<div class="selector-box">
+			<div class="selector">
+				<a href="./contact.html">
+					<img src="../images/contact.png"/>
+				</a>
+			</div>
+			<div class="selector content-down" onclick="hideContent()">
+				<img src="../images/forebackgroundselector.png"/>
+			</div>
+			<div hidden class="selector content-up" onclick="hideContent()">
+				<img src="../images/backforegroundselector.png"/>
+			</div>
+		</div>
 
 		<div class="main-container">
 			<div class="logo"></div>
