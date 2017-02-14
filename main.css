@@ -24,47 +24,37 @@ h4 {
 	height: 100%;
 	width: 100%;
 	background-color: black;
+	z-index: 0;
 }
 
 .logo {
 	position: absolute;
 	top: 9%;
 	left: 10px;
-	z-index: 10;
 }
 
-.contact-icon {
+.selector-box {
 	position: absolute;
-	top: 45%;
-	left: -5px;
+	top: 50%;
+	height: auto;
+	width: auto;
+	float: left;
+}
+
+.selector {
+	position: relative;
+	left: -10px;
+	background-color: rgba(176, 180, 186, 0.9);
+	padding: 2px 2px 2px 12px;
 	z-index: 10;
-	background-color: rgba(176, 180, 186, 0.6);
-	padding: 3px 7px 3px 10px;
 }
 
-.contact-icon img {
-	display: block;
-}
-
-.contact-icon:hover {
+.selector:hover {
 	left: 0;
 }
 
-.foregroundselector {
-	position: absolute;
-	top: 55%;
-	left: -5px;
-	z-index: 10;
-	background-color: rgba(176, 180, 186, 0.6);
-	padding: 3px 7px 3px 10px;
-}
-
-.foregroundselector img {
+.selector img {
 	display: block;
-}
-
-.foregroundselector:hover {
-	left: 0;
 }
 
 .slide img {
