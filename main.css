@@ -1,15 +1,20 @@
-p {
-	font-family: arial, sans-serif;
-	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-	font-size: 18px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: bold;
-	line-height: 22.0px;
+/* We need a compiler. */
+.fontclass {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-size: 16px;
+	line-height: 1.5;
+	word-wrap: break-word;
 }
 
-h4 {
-	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+p {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-size: 16px;
+	line-height: 1.5;
+	word-wrap: break-word;
+}
+
+h4  {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	font-size: 24px;
 	font-style: normal;
 	font-variant: normal;
@@ -30,6 +35,7 @@ h4 {
 .logo {
 	position: absolute;
 	top: 9%;
+	top: calc(9% + 2px); 
 	left: 10px;
 }
 
