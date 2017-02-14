@@ -39,7 +39,11 @@ h4 {
 	left: -5px;
 	z-index: 10;
 	background-color: rgba(176, 180, 186, 0.6);
-	padding: 5px 7px 3px 10px;
+	padding: 3px 7px 3px 10px;
+}
+
+.contact-icon img {
+	display: block;
 }
 
 .contact-icon:hover {
@@ -48,11 +52,15 @@ h4 {
 
 .foregroundselector {
 	position: absolute;
-	top: 52%;
+	top: 55%;
 	left: -5px;
 	z-index: 10;
 	background-color: rgba(176, 180, 186, 0.6);
-	padding: 5px 7px 3px 10px;
+	padding: 3px 7px 3px 10px;
+}
+
+.foregroundselector img {
+	display: block;
 }
 
 .foregroundselector:hover {
