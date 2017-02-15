@@ -24,6 +24,13 @@ function setShowContent(showContent) {
 }
 
 function showContent() {
+
+    if(window.initLocalContent !== undefined) {
+        window.initLocalContent();
+        window.initLocalContent = undefined;
+        return;
+    }
+
     var content = document.getElementsByClassName("content")[0];
     var up = document.getElementsByClassName("content-up")[0];
     var down = document.getElementsByClassName("content-down")[0];
