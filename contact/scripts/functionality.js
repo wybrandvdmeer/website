@@ -15,7 +15,7 @@ because it is not fully loaded, a timeout is set when displaying the iframe for 
 */
 window.initLocalContent = function initLocalContent() {
 	setTimeout(function() {
-		contactForm = document.getElementById('if');
+		contactForm = document.getElementById('contactForm');
 		contactForm.style.display = 'block';
 	}, 800);
 };
