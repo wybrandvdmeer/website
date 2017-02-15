@@ -215,4 +215,8 @@ and (max-device-width: 480px) {
 	.content-home {
 		width: 70%;
 	}
+	.fontclass {
+		font-size: 24px;
+		line-height: 1.5;
+	}
 }
