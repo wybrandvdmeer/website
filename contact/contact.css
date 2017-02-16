@@ -62,11 +62,22 @@
 	to {opacity: 1}
 }
 
-@media 
-	only screen and (max-device-width: 480px), 
-	only screen and (max-width: 480px) {
+@media only screen and (max-device-width: 480px) and (max-device-height: 460px) {
 	iframe {
 		transform: scale(0.8);	
+	}
+	.content-contact {
+		top: 0;
+		width: 80%;
+		height: 80%;
+	}
+}
+
+/*IPhone 4. 
+*/
+@media only screen and (max-device-width: 480px) and (max-device-height: 400px) {
+	iframe {
+		transform: scale(0.6);	
 	}
 	.content-contact {
 		top: 0;
