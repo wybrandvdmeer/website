@@ -223,6 +223,9 @@ ul li {
 		padding: 10px 20px 10px 20px;
 		margin:  0 5px;
 	}
+	h4 {
+		font-size: 15px;	
+	}
 	p {
 		font-size: 10px;
 	}
