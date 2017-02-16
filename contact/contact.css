@@ -64,7 +64,7 @@
 
 @media only screen and (max-device-width: 480px) {
 	iframe {
-		transform: scale(0.8);	
+		transform: scale(0.6);	
 	}
 	.content-contact {
 		top: 0;
